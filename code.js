@@ -34,7 +34,8 @@ function updateSeasons() {
  //add rabbit if season = winter
  if (season === seasons[0] || season === seasons[2]) {
   rabbit.classList.add("animated");
- } else {
+  setTimeout(() => {alert("🌑🌕 نو")},1500);  
+} else {
   rabbit.classList.remove("animated");
  }
 
@@ -43,6 +44,7 @@ function updateSeasons() {
   ? rainbow.classList.add("animated")
   : rainbow.classList.remove("animated");
  if (season === seasons[1]) {
+  alert("عدا اول شتا ونحن سوى, وكان أحلى شتا ف حياتي")
   html.style.setProperty("--rabbit", "#9E6255");
  }
  //add flowers if season = spring
